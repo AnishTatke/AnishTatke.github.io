@@ -6,12 +6,18 @@ export default function GradientImage(props: any) {
     return (
         <div className={props.containerClass}>
             <div className={props.maskClass}></div>
-            <Image
+            {props.priority ? <Image
+                priority
                 className='z-0 !left-px'
                 src={img}
                 alt='Image'
                 fill
-            />
+            /> : <Image
+                className='z-0 !left-px'
+                src={img}
+                alt='Image'
+                fill
+            />}
         </div>
     )
 }

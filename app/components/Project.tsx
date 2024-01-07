@@ -5,9 +5,8 @@ import 'swiper/css/thumbs';
 import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-coverflow';
-import data from '../../_data/data.json'
 
-import GradientImage from './GradientImage'
+import GradientImage from '../components/GradientImage'
 
 import { Swiper as SwiperType } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -69,7 +68,8 @@ function ProjectCard(props: any) {
 }
 
 
-export default function SelectedProject() {
+export default function SelectedProject(props: any) {
+    const projects = props.projects
     const [currSlideIdx, setCurrSlideIdx] = useState(1)
     const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
     return (
@@ -84,7 +84,7 @@ export default function SelectedProject() {
                 rewind
                 autoplay={{delay: 5000}}
             >
-                {data.projects.map((project, idx) => (
+                {projects.map((project: any, idx: number) => (
                     <SwiperSlide key={idx}><ProjectCard project={project} /></SwiperSlide>
                 ))}
             </Swiper>
@@ -113,7 +113,7 @@ export default function SelectedProject() {
                     centeredSlidesBounds
                     className='myProjectSlider'
                 >
-                    {data.projects.map((project, idx) => (
+                    {projects.map((project: any, idx: number) => (
                         <SwiperSlide key={idx}>
                             {({ isPrev, isActive, isNext }) => {
                                 return (

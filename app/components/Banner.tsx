@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import { formatString } from '../helper'
 import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
-import MyRating from './MyRating';
+import MyRating from '../components/MyRating';
 
 export default function Banner(props: any) {
     const mainStyle = props.style

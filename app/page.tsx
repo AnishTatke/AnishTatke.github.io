@@ -33,6 +33,7 @@ export default function Home() {
             </div>
             <div className='flex w-1/2 h-fit px-5 pt-10 justify-center'>
               <GradientImage
+                priority
                 image={myImage}
                 containerClass="relative w-[485px] h-[518px] overflow-hidden"
                 maskClass="absolute z-10 h-full w-full bg-[linear-gradient(180deg,rgba(30,30,30,0)_0%,rgba(30,30,30,0.77)_75.71%,rgba(30,30,30,0.87)_86.59%,rgba(30,30,30,1)_100%)]"
@@ -42,7 +43,7 @@ export default function Home() {
 
           <div id='projects' className='w-full'>
             <Heading>Projects</Heading>
-            <SelectedProject />
+            <SelectedProject projects={data.projects} />
           </div>
 
           <div id='profile' className='w-full'>
