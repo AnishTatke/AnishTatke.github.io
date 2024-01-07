@@ -2,19 +2,30 @@ import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./app/**/*.{html,ts,tsx,mdx}",
+    "./pages/**/*.{html,ts,tsx,mdx}",
+    "./components/**/*.{html,ts,tsx,mdx}",
+ 
+    // Or if using `src` directory:
+    "./src/**/*.{html,ts,tsx,mdx}",
   ],
   theme: {
+    colors: {
+      board: '#1e1e1e',
+      grey: '#636260',
+      light: "#d9d9d9",
+      transparentText: "#d9d9d9ba",
+      white: '#ffffff',
+      black: '#000000'
+    },
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+      fontFamily: {
+        kaushanScript: 'kaushan-script',
+        exo2: 'exo2'
+      }
     },
   },
   plugins: [],
+  // purge: ["./components/**/*.{html,ts,tsx,mdx}"],
 }
 export default config

@@ -1,0 +1,168 @@
+{
+    "biodata": {
+        "first_name": "Anish",
+        "last_name": "Tatke",
+        "age": "25",
+        "gender": "male",
+        "pronouns": "he/him",
+        "phone_number": "XXX-XXX-XXXX",
+        "country_of_birth": "India",
+        "country_of_residence": "United Stated of America",
+        "profile": "Student"
+    },
+    "skills": {
+        "python": 5,
+        "javascript": 5,
+        "java": 4,
+        "c/C++": 3
+    },
+    "projects": [
+        {
+            "id": 0,
+            "title": "Garbage Detection Application using Deep Learning Techniques",
+            "image_url": "/project1.png",
+            "card_image_url": "/project1_cover.png",
+            "content": "Garbage Detection Application is a deep learning, computer vision based projected performed in my final year of under-graduate degree. This application consists of two phases of development, each targetting the deep learning side and application development side. The first phase consisted of research, training and analysis of various object detection models on thousands of garbage images across several datasets. Simultaneously developed Flutter Mobile Application which used mobile's camera module to click images and run them using custom Tensorflow Lite model. This project was showcased along side a research paper on the same topic in the well-known IEEE journal (RTEICT)",
+            "links": {
+                "github_link": "https://github.com/AnishTatke/garbage_app",
+                "website_link": "",
+                "notebook_link": "",
+                "paper_link": "https://ieeexplore.ieee.org/document/9573599"
+            }
+        },
+        {
+            "id": 1,
+            "title": "Epidemic Simulator",
+            "image_url": "/project2.png",
+            "card_image_url": "/project2_cover.png",
+            "content": "Epidemic Simulator is a data simulation project built in Python using Object Oriented Programming. For simulating a world and people in it, object oriented programming is used and its instances are populated in a loop. The people are induced a certain random motion which simulates the randomness of our real world. A virus is simulated in this world using specific epidemiological paramters, like mortality rate, spread distance, infection time, etc. We calculate the Manhattan distance between each person and spread the virus accordingly. Matplotlib plots and animations are used to visualize this effort.",
+            "links": {
+                "github_link": "",
+                "website_link": "",
+                "notebook_link": "https://colab.research.google.com/drive/1dTNcgFcWiigC-qdDfDG2PJNPU3y1XXSI?usp=sharing",
+                "paper_link": ""
+            }
+        },
+        {
+            "id": 2,
+            "title": "Project 3",
+            "image_url": "/project3.jpg",
+            "card_image_url": "/project3.jpg",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "links": {
+                "github_link": "",
+                "website_link": "",
+                "notebook_link": "",
+                "paper_link": ""
+            }
+        },
+        {
+            "id": 3,
+            "title": "Project 4",
+            "image_url": "/project4.jpg",
+            "card_image_url": "/project4.jpg",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "links": {
+                "github_link": "",
+                "website_link": "",
+                "notebook_link": "",
+                "paper_link": ""
+            }
+        }
+    ],
+    "events": [
+        {
+            "year": 2017,
+            "month": "July",
+            "short_title": "MIT",
+            "event_title": "Maharashtra Institute of Technology, World Peace University",
+            "location": "Pune",
+            "zipcode": "411038",
+            "country": "India",
+            "purpose": "Under-Graduate Degree",
+            "profile": "Computer Science Student",
+            "description": "",
+            "end_year": 2021,
+            "end_month": "June",
+            "performance": 8.62
+        },
+        {
+            "year": 2020,
+            "month": "February",
+            "short_title": "Dee Dee Labs",
+            "event_title": "Dee Dee Labs Pvt. Ltd",
+            "location": "Pune",
+            "zipcode": "4110",
+            "country": "India",
+            "purpose": "Internship",
+            "profile": "Software Developer Intern",
+            "description": "",
+            "end_year": 2020,
+            "end_month": "May",
+            "performance": ""
+        },
+        {
+            "year": 2021,
+            "month": "June",
+            "short_title": "Quantiphi Analytics",
+            "event_title": "Quantiphi Analytics Pvt. Ltd",
+            "location": "Bangalore",
+            "zipcode": "",
+            "country": "India",
+            "purpose": "Work Experience",
+            "profile": "Software Developer",
+            "description": "",
+            "end_year": 2023,
+            "end_month": "June",
+            "performance": ""
+        },
+        {
+            "year": 2023,
+            "month": "August",
+            "short_title": "UF",
+            "event_title": "University of Florida",
+            "location": "Gainesville",
+            "zipcode": "32608",
+            "country": "United States of America",
+            "purpose": "Graduate Degree",
+            "profile": "Master's Computer Science Student",
+            "description": "",
+            "end_year": "-",
+            "end_month": "-",
+            "performance": 3.55
+        }
+    ],
+    "links": {
+        "linked_in": {
+            "id": 1,
+            "title": "tatke-anish",
+            "link": "https://www.linkedin.com/in/tatke-anish"
+        },
+        "github": {
+            "id": 3,
+            "title": "AnishTatke",
+            "link": "https://github.com/AnishTatke"
+        },
+        "instagram": {
+            "id": 6,
+            "title": "nerdyappa",
+            "link": ""
+        },
+        "primary_email": {
+            "id": 2,
+            "title": "anish.tatke@ufl.edu",
+            "link": "anish.tatke@ufl.edu"
+        },
+        "secondary_email": {
+            "id": 4,
+            "title": "nish.tatke@gmail.com",
+            "link": "nish.tatke@gmail.com"
+        },
+        "location": {
+            "id": 6,
+            "title": "Gainesville",
+            "link": "https://maps.app.goo.gl/gj5qSL3qyweEcFWn7"
+        }
+    },
+    "resume": "https://drive.google.com/file/d/1KT8ZEmynZ18SdXvBSQBZ_qnpwR-D2XLF/view?usp=sharing"
+}

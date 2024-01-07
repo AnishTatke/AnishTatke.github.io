@@ -1,6 +1,10 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -18,10 +22,49 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+
+
+@font-face {
+  font-family: 'kaushan-script';
+  src: url('../public/KaushanScript.ttf');
+}
+
+@font-face {
+  font-family: 'exo2';
+  src: url('../public/Exo2.ttf');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* Custom Scroll Bar */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #d9d9d9 #1e1e1e;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #d9d9d91f;
+  border-radius: 12px;
+}
+
+*::-webkit-scrollbar-thumb:hover{
+  background-color: #d9d9d961;
 }
