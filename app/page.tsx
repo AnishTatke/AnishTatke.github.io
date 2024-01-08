@@ -1,5 +1,6 @@
 // Importing Libraries
 import Head from 'next/head'
+import {promises as fs} from 'fs';
 // Importing Components
 import Heading from './components/Heading'
 import SelectedProject from './components/Project'
@@ -10,10 +11,10 @@ import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 // Importing data and images
 import myImage from '../public/myImage.png'
-import data from '../_data/data.json'
 
-
-export default function Home() {
+export default async function Home() {
+  const file = await fs.readFile(process.cwd() + '/_data/data.json', 'utf-8')
+  const data = JSON.parse(file);
   return (
     <div>
       <Head>
